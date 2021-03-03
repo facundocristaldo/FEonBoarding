@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS index for testing</title>
+    <style>
+        *{
+            font-size: 1.1em;
+        }
+        .divgrid{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+        }
+        .gridcontent{
+            padding: 1em;
+            border: 1px solid darkblue;
+            text-align: center;
+        }
+        .gridcontentimg{
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h3>Grid layout</h3>
+        <div class="divgrid">
+            <div class="gridcontent">
+                <img class="gridcontentimg" src="https://picsum.photos/200" alt="A random image">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga, modi non a quo repudiandae alias nihil, neque in et, eveniet libero? Voluptatem quam sapiente nostrum laborum nobis modi sunt impedit!</p>
+            </div>
+            <div class="gridcontent">
+                <img class="gridcontentimg" src="https://picsum.photos/200" alt="A random image">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, suscipit!</p>
+            </div>
+            <div class="gridcontent">
+                <img class="gridcontentimg" src="https://picsum.photos/200" alt="A random image">
+                <p> Voluptatem quam sapiente nostrum laborum nobis modi sunt impedit!</p>
+            </div>
+            <div class="gridcontent">
+                <img class="gridcontentimg" src="https://picsum.photos/200" alt="A random image">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus esse atque perspiciatis autem id officia totam quo ipsam ex eveniet. Cupiditate beatae eum vitae dolorem quisquam, architecto molestiae voluptates incidunt repellendus, nam facilis explicabo iste autem adipisci assumenda natus quidem!</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

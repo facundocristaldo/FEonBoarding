@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS index for testing</title>
+    <style>
+        
+        .divflex{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .flexcontent{
+            padding: 1em;
+            border: 1px solid darkblue;
+            text-align: center;
+            min-width: 200px;
+            width: 25%;
+            max-width: 500px;
+        }
+        .flexcontentimg{
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body>    
+    <section>
+        <h3>FlexBox</h3>
+        <div class="divflex">
+            <div class="flexcontent">
+                <img class="flexcontentimg" src="https://picsum.photos/200" alt="A random image">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga, modi non a quo repudiandae alias nihil, neque in et, eveniet libero? Voluptatem quam sapiente nostrum laborum nobis modi sunt impedit!</p>
+            </div>
+            <div class="flexcontent">
+                <img class="flexcontentimg" src="https://picsum.photos/200" alt="A random image">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, suscipit!</p>
+            </div>
+            <div class="flexcontent">
+                <img class="flexcontentimg" src="https://picsum.photos/200" alt="A random image">
+                <p> Voluptatem quam sapiente nostrum laborum nobis modi sunt impedit!</p>
+            </div>
+            <div class="flexcontent">
+                <img class="flexcontentimg" src="https://picsum.photos/200" alt="A random image">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus esse atque perspiciatis autem id officia totam quo ipsam ex eveniet. Cupiditate beatae eum vitae dolorem quisquam, architecto molestiae voluptates incidunt repellendus, nam facilis explicabo iste autem adipisci assumenda natus quidem!</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

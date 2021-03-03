@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS index for testing</title>
+    <style>
+        *{
+            font-size: 1.1em;
+        }
+        #idselector{
+            color:darkblue;
+        }
+        .classselector{
+            text-decoration: underline;
+        }
+        span{
+            color:darkgreen
+        }
+        div{
+            background-color: darksalmon;
+            padding: 10px;
+        }
+        div p{
+            background-color: darkgrey;
+        }
+        div p:last-child{
+            background-color: darkturquoise;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Selectors</h1>
+        <p>Selectos are the way css targets which html element to give it style</p>
+        <p>We can have id, class, tag, *, attributes selectors</p>
+        <p id="idselector">Id selected this by #idselector at css</p>
+        <p class="classselector">Class selected this by .classselector at css</p>
+        <p>acá seleccionaremos <span>este span con un tag selector</span></p>
+        <div>
+            <p>Tambien podemos seleccionar</p>
+            <p>Todos los hijos de un elemento</p>
+            <p>O solo el ultimo, etc</p>
+        </div>
+    </section>
+</body>
+</html>
