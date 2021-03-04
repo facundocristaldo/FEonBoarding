@@ -1,3 +1,21 @@
-p::first-line{
-text-decoration: underline;
+p{
+font-size: 1em;
+width: 50vw;
+    &::first-line{
+        text-decoration: underline;
+       
+    }
+   
 }
+
+@mixin define-msg($name, $color) {
+    &.msg-#{$name} {
+      color: $color;
+      font-variant: normal;
+      font-weight: normal;
+    }
+  }
+
+@include define-msg("warning", darkred);
+@include define-msg("success", darkgreen);
+@include define-msg("info", darkgrey);
