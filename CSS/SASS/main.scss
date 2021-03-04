@@ -9,13 +9,13 @@ width: 50vw;
 }
 
 @mixin define-msg($name, $color) {
-    &.msg-#{$name} {
+    &.msg-#{$name} { //this is interpolation
       color: $color;
       font-variant: normal;
       font-weight: normal;
     }
   }
 
-@include define-msg("warning", darkred);
+@include define-msg("error", darkred);
 @include define-msg("success", darkgreen);
 @include define-msg("info", darkgrey);
