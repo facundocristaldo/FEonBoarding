@@ -1,21 +1,30 @@
-p{
-font-size: 1em;
-width: 50vw;
-    &::first-line{
-        text-decoration: underline;
-       
-    }
-   
+p {
+  font-size: 1em;
+  width: 50vw;
+  &::first-line {
+    text-decoration: underline;
+  }
 }
 
 @mixin define-msg($name, $color) {
-    &.msg-#{$name} { //this is interpolation
-      color: $color;
-      font-variant: normal;
-      font-weight: normal;
-    }
+  &.msg-#{$name} {
+    //this is interpolation
+    color: $color;
+    font-variant: normal;
+    font-weight: normal;
   }
+}
 
 @include define-msg("error", darkred);
 @include define-msg("success", darkgreen);
 @include define-msg("info", darkgrey);
+
+
+@function square($num,$unit) {
+  @return #{$num * $num}#{$unit};
+}
+
+.sidebar {
+  float: left;
+  margin-left: square(10,px);
+}
